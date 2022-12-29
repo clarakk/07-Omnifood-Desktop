@@ -16,7 +16,7 @@ html {
 }
 .heading-secondary {
   color: #333;
-  font-size: 4.4rem;
+  font-size: 4rem;
   font-weight: 700;
   letter-spacing: -0.5px;
   line-height: 1.2;
@@ -49,7 +49,7 @@ body {
   align-items: center;
   gap: 7.6rem;
   margin: 0 auto;
-  padding: 0 3.2rem;
+  padding: 0 9.6rem;
 }
 .hero-img {
   width: 100%;
@@ -65,7 +65,7 @@ body {
   text-decoration: none;
 }
 .btn:link,
-btn:visited {
+.btn:visited {
   background-color: #e67e22;
   font-size: 2rem;
   font-weight: 600;
@@ -169,12 +169,12 @@ btn:visited {
 *************************************
 /* REUSABLE GRID */
 *************************************
+
 .container {
   max-width: 120rem;
-  padding: 9.6rem;
+  /* padding: 9.6rem;   */
 }
 .section-how {
-  padding: 3.2rem 9.6rem;
 }
 .grid {
   display: grid;
@@ -195,12 +195,12 @@ btn:visited {
 }
 .step-img {
   width: 35%;
- }
+}
 .step-img-box {
   display: flex;
   align-items: center;
   justify-content: center;
-   position: relative;  
+  position: relative;
 }
 .step-number {
   font-size: 7.6rem;
@@ -242,4 +242,29 @@ btn:visited {
   transform: translate(-50%, -50%);
   background-color: #f6ddc8;
   z-index: -1;
+}
+.container {
+  max-width: 120rem;
+  padding: 0 9.6rem;
+  margin: 0 auto;
+}
+.section-featured {
+  padding: 4.8rem 0 3.2rem 0;
+}
+.heading-featured-in {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 2.4rem;
+  color: #888;
+}
+.logos {
+  display: flex;
+  justify-content: space-around;
+}
+.logos img {
+  height: 3.2rem;
+  filter: brightness(0) opacity(50%);
 }
