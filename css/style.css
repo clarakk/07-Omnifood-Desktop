@@ -169,10 +169,7 @@ body {
 /* REUSABLE GRID */
 *************************************
 
-.container {
-  max-width: 120rem;
-  /* padding: 9.6rem;   */
-}
+
 .section-how {
 }
 .grid {
@@ -274,7 +271,7 @@ body {
 /* MEALS SECTION*/
 /* *********************************/
 .section-meals {
-  padding: 9.6rem;
+  padding: 4.6rem;
 }
 .meal-content {
   padding: 2.6rem;
@@ -284,7 +281,13 @@ body {
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
   border-radius: 11px;
   overflow: hidden;
+  transition: all 0.4s;
   }
+.meal:hover {
+  transform: translateY(-1.5rem);
+   box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.15);
+}
+
 .meal-tags {
   margin-bottom: 1.2rem
 }
