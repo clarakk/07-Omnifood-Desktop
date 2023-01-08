@@ -166,17 +166,18 @@ body {
 }
 
 /* REUSABLE GRID */
-
+.container {
+  max-width: 120rem;
+  padding: 0 6.4rem;
+  margin: 0 auto;
+}
 .grid {
   display: grid;
   row-gap: 9.6rem;
-  column-gap: 6.4rem;
-  margin-bottom: 6.4rem;
+  column-gap: 6.4rem; 
+  padding: 0 4.8rem; 
+  margin-bottom: 4.8rem; 
 }
-.grid:last-child {
-  margin-bottom: 0;
-}
-
 .grid--2-cols {
   grid-template-columns: repeat(2, 1fr);
 }
@@ -238,11 +239,7 @@ body {
   background-color: #f6ddc8;
   z-index: -1;
 }
-.container {
-  max-width: 120rem;
-  padding: 0 3.2rem;
-  margin: 4.8 rem auto;
-}
+
 .section-featured {
   padding: 4.8rem 0 3.2rem 0;
 }
@@ -522,3 +519,7 @@ strong {
   font-size: 1.2rem;
   text-align: center;
 }
+
+/* .grid{
+  margin-bottom: 6.4rem;
+} */
