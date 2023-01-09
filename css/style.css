@@ -168,15 +168,18 @@ body {
 /* REUSABLE GRID */
 .container {
   max-width: 120rem;
-  padding: 0 6.4rem;
+  padding: 0 3.2rem;
   margin: 0 auto;
 }
 .grid {
   display: grid;
   row-gap: 9.6rem;
-  column-gap: 6.4rem; 
-  padding: 0 4.8rem; 
-  margin-bottom: 4.8rem; 
+  column-gap: 6.4rem;
+  padding: 3.2rem;
+}
+
+.taxes {
+  margin-top: -3.2rem !important;
 }
 .grid--2-cols {
   grid-template-columns: repeat(2, 1fr);
@@ -511,15 +514,42 @@ strong {
   /* text-align: center; */
 }
 .feature-text {
-  font-size: 1.8rem;
-  line-height: 1.8;
+  font-size: 1.6rem;
+  line-height: 1.6;
 }
 .plan-details {
   line-height: 1.6;
   font-size: 1.2rem;
   text-align: center;
 }
-
 /* .grid{
   margin-bottom: 6.4rem;
 } */
+/* ********* CTA ********* */
+.section-cta {
+  padding: 0 9.6rem;
+}
+.cta {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  /* background-color: #e67e22; */
+  background-image: linear-gradient(to right, #eb984e, #e67e22);
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.2);
+  border-radius: 11px;
+  background-position: center;
+  overflow: hidden;
+  /* temp */
+  height: 50rem;
+  margin-bottom: 9.6rem;
+}
+.cta-text-box {
+}
+.cta-img-box {
+  background-image: linear-gradient(
+      to right,
+      hsla(28, 80%, 61%, 0.35),
+      rgba(137, 71, 13, 0.35)
+    ),
+    url("../img/eating.jpg");
+  background-size: cover;
+}
