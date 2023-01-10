@@ -3,8 +3,14 @@
   padding: 0;
   box-sizing: border-box;
 }
+*:focus {
+  outline: none;
+  /* outline: 4px dotted #e67e22;
+  outline-offset: 8px; */
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5)
+}
 html {
-  font-size: 62.5%;
+  font-size: 62.5%;  
 }
 .heading-primary {
   font-size: 5.2rem;
@@ -64,6 +70,7 @@ body {
   border-radius: 9px;
   text-decoration: none;
 }
+.btn,
 .btn:link,
 .btn:visited {
   background-color: #e67e22;
@@ -72,6 +79,9 @@ body {
   color: white;
   padding: 1.6rem 3.2rem;
   transition: all 0.4s;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
 }
 .btn--important:link,
 .btn--important:visited {
@@ -82,9 +92,10 @@ body {
 .btn--important:active {
   background-color: #cf711f;
 }
+.btn,
 .btn--secondary:link,
 .btn--secondary:visited {
-  background-color: white;
+   background-color: white;
   color: #555;
 }
 .btn--secondary:hover,
@@ -538,11 +549,17 @@ strong {
   border-radius: 11px;
   background-position: center;
   overflow: hidden;
-  /* temp */
-  height: 50rem;
+  
   margin-bottom: 9.6rem;
 }
 .cta-text-box {
+  padding: 4.8rem 6.4rem;
+  color: #45260a;
+}
+.cta .heading-secondary {
+  /* color: #45260a; */
+  color: inherit;
+  margin-bottom: 3.2rem;
 }
 .cta-img-box {
   background-image: linear-gradient(
@@ -552,4 +569,49 @@ strong {
     ),
     url("../img/eating.jpg");
   background-size: cover;
+}
+.cta-text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
+.cta-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+      }
+.cta-form label {
+display: block;
+font-size: 1.6rem;
+font-weight: 600;
+margin-bottom: 1.2rem;
+}
+.cta-form input, .cta-form select{
+ width: 100%; 
+ padding: 1.2rem;
+ font-size: 1.8rem;
+ font-family: inherit;
+ color: inherit;
+ background-color: #fdf2e9;
+ border: none;
+ border-radius: 9px;
+ box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2)
+}
+.cta-form input::placeholder {
+  color: #aaa;
+}
+.btn--form {
+background-color: #45260a;
+color: #fdf2e9;
+align-self: end;
+padding: 1.2rem;
+}
+.btn--form:hover {
+  background-color: #fff;
+  color: #333;
+}
+.cta *:focus {
+  outline: none;
+    box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5)
 }
