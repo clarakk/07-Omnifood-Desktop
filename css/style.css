@@ -628,6 +628,7 @@ padding: 1.2rem;
 }
 .grid--footer {
   grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+  padding: 0;
 }
 .logo-col {
   display: flex;
@@ -678,3 +679,6 @@ transition:all 0.4s
 .footer-link:active {
   color: #555
 } 
+.padding {
+  padding: 3.2rem 0;
+}
