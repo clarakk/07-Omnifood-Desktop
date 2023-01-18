@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-*:focus {
+ *:focus {
   outline: none;
   /* outline: 4px dotted #e67e22;
   outline-offset: 8px; */
@@ -11,6 +11,15 @@
 }
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
+}
+body {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  color: #555;
+  /* only works if there's nothing absolutely positioned in relation to body! */
+  overflow-x: hidden;
 }
 .heading-primary {
   font-size: 5.2rem;
@@ -36,13 +45,6 @@ html {
   text-transform: uppercase;
   letter-spacing: 0.75;
   padding: 2.2rem 0;
-}
-
-body {
-  font-family: "Rubik", sans-serif;
-  font-weight: 400;
-  line-height: 1;
-  color: #555;
 }
 .section-hero {
   background-color: #fdf2e9;
@@ -143,13 +145,14 @@ body {
   background-color: #fdf2e9;
   height: 2.2rem;
   padding: 3.4rem;
+  position: relative;
 }
 .main-navigation {
   display: flex;
   list-style-type: none;
   align-items: center;
   gap: 3.2rem;
-}
+  }
 .main-navigation-link:link,
 .main-navigation-link:visited {
   display: inline-block;
@@ -685,4 +688,22 @@ strong {
 }
 .padding {
   padding: 3.2rem ;
+}
+/* ********************* */
+/* MOBILE BUTTON */
+/* ********************* */
+
+.btn-mobile-nav {
+border: none;
+background:none;
+cursor: pointer;
+display: none;
+}
+.icon-mobile-nav {
+height: 4.8rem;
+width: 4.8rem;
+color: #333;
+}
+.icon-mobile-nav[name=close-outline] {
+  display: none;
 }
