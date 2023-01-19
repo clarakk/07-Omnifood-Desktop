@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../Codespaces/prove"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "07-OmniGib-responsive"
+	}
+}

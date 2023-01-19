@@ -10,24 +10,36 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/queries.css">
 </head>
+<body>
+    <header class="header">
 
-<main>
     <header class="logo-header">
-        <img class="logo" src="img/omnifood-logo.png" alt="">
+        <a href="#"><img class="logo" src="img/omnifood-logo.png" alt="Omnifood"></a>
+
+
         <nav class="main-nav">
             <ul class="main-navigation">
-                <li><a class="main-navigation-link" href="#">link 1</a></li>
-                <li><a class="main-navigation-link" href="#">link 2</a></li>
-                <li><a class="main-navigation-link" href="#">link 3</a></li>
-                <li><a class="main-navigation-link nav-cta" href="#">link 4</a> </li>
+                <li><a class="main-navigation-link" href="#">How it works</a></li>
+                <li><a class="main-navigation-link" href="#">Meals</a></li>
+                <li><a class="main-navigation-link" href="#">Testimonials</a></li>
+                <li><a class="main-navigation-link" href="#">Pricing</a></li>
+                <li><a class="main-navigation-link nav-cta" href="#">Try for free</a> </li>
             </ul>
         </nav>
+
+<button class="btn-mobile-nav">
+    <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+    <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+</button>
+
     </header>
+    <main>
     <section class="section-hero">
         <div class="hero">
             <div class="hero-text-box">
-                <h1 class="heading-primary"> Gibbona's best food: sai quello che mangi</h1>
+                <h1 class="heading-primary"> Gibbona's best food:<br>sai quello che mangi</h1>
                 <p class="hero-description">Scegli i piatti che preferisci. Ti insegnerò come cucinare in modo sano e
                     gustoso le ricette della tradizione</p>
                 <a href="#" class="btn btn--important margin-right-sm">Impara a cucinare</a>
@@ -69,7 +81,7 @@
             </h2>
 
 
-            <div class="container grid">
+            <div class="container grid grid--2-cols">
                 <!-- STEP 01 -->
                 <div class="step-text-box">
                     <p class="step-number">01</p>
@@ -296,48 +308,180 @@
                 Mangia bene senza spendere troppo
             </h2>
         </div>
-<div class="container grid">
-    <div class="pricing-plan pricing-plan--starter">
-        <header class="plan-header">
-        <p class="plan-name">Starter</p>
-        <p class="plan-price"><span>$</span>399</p>
-        <p class="plan-text">per month. That's just $13 per meal!</p></header>
-        <ul class="list">
-        <li class="list-item"><ion-icon class="list-icon" name="checkmark-outline"></ion-icon><span>1 meal per day</span></li>
-        <li class="list-item"><ion-icon class="list-icon" name="checkmark-outline"></ion-icon><span>Order from 11 am and 9 pm</span></li>
-        <li class="list-item"><ion-icon class="list-icon" name="checkmark-outline"></ion-icon><span>Delivery is free</span></li>
-        <li class="list-item"><ion-icon class="list-icon" name="close-outline"></ion-icon></li>
-        </ul>
-        <div class="plan-sign-up">
-        <a href="#" class="btn btn--important">Prova i nostri pasti</a>
-</div>
-    </div>
-    <div class="pricing-plan pricing-plan--complete">
-        <header class="plan-header">
-        <p class="plan-name">Complete</p>       
-    <p class="plan-price"><span>$</span>649</p>
-    <p class="plan-text">per month. That's just $11 per meal!</p></header>
-    <ul class="list">
-        <li class="list-item"><ion-icon class="list-icon" name="checkmark-outline"></ion-icon><span><strong>2 meals</strong> per day</span>
-        </li>
-        <li class="list-item"><ion-icon class="list-icon" name="checkmark-outline"></ion-icon><span>Order <strong>24/7</strong></span></li>       
-        <li class="list-item"><ion-icon class="list-icon" name="checkmark-outline"></ion-icon><span>Delivery is free</span>
-        </li>
-        <li class="list-item"><ion-icon class="list-icon" name="checkmark-outline"></ion-icon><span>Get access to latest recipes</span>
-        </li>
-    </ul>
-    <div class="plan-sign-up">
-    <a href="#" class="btn btn--important">Programma completo</a></div>
-</div>
+        <div class="container grid grid--2-cols">
+            <div class="pricing-plan pricing-plan--starter">
+                <header class="plan-header">
+                    <p class="plan-name">Starter</p>
+                    <p class="plan-price"><span>$</span>399</p>
+                    <p class="plan-text">per month. That's just $13 per meal!</p>
+                </header>
+                <ul class="list">
+                    <li class="list-item"><ion-icon class="list-icon" name="checkmark-outline"></ion-icon><span>1 meal
+                            per day</span></li>
+                    <li class="list-item"><ion-icon class="list-icon" name="checkmark-outline"></ion-icon><span>Order
+                            from 11 am and 9 pm</span></li>
+                    <li class="list-item"><ion-icon class="list-icon" name="checkmark-outline"></ion-icon><span>Delivery
+                            is free</span></li>
+                    <li class="list-item"><ion-icon class="list-icon" name="close-outline"></ion-icon></li>
+                </ul>
+                <div class="plan-sign-up">
+                    <a href="#" class="btn btn--important">Prova i nostri pasti</a>
+                </div>
+            </div>
+            <div class="pricing-plan pricing-plan--complete">
+                <header class="plan-header">
+                    <p class="plan-name">Complete</p>
+                    <p class="plan-price"><span>$</span>649</p>
+                    <p class="plan-text">per month. That's just $11 per meal!</p>
+                </header>
+                <ul class="list">
+                    <li class="list-item"><ion-icon class="list-icon"
+                            name="checkmark-outline"></ion-icon><span><strong>2 meals</strong> per day</span>
+                    </li>
+                    <li class="list-item"><ion-icon class="list-icon" name="checkmark-outline"></ion-icon><span>Order
+                            <strong>24/7</strong></span></li>
+                    <li class="list-item"><ion-icon class="list-icon" name="checkmark-outline"></ion-icon><span>Delivery
+                            is free</span>
+                    </li>
+                    <li class="list-item"><ion-icon class="list-icon" name="checkmark-outline"></ion-icon><span>Get
+                            access to latest recipes</span>
+                    </li>
+                </ul>
+                <div class="plan-sign-up">
+                    <a href="#" class="btn btn--important">Programma completo</a>
+                </div>
+            </div>
+        </div>
+        <div class="container grid taxes">
+            <aside class="plan-details">Prices include all applicable taxes. You can cancel at any time. Both plans
+                include the following:</aside>
+        </div>
+        <div class="container grid grid--4-cols padding">
 
-</div>
+            <div class="feature">
+                <ion-icon class="feature-icon" name="infinite-outline"></ion-icon>
+                <p class="feature-title">Never cook again!</p>
+                <p class="feature-text">Our subscriptions cover 365 days per year, even including major
+                    holidays.</p>
+            </div>
+            <div class="feature">
+                <ion-icon class="feature-icon" name="nutrition-outline"></ion-icon>
 
+                <p class="feature-title">Local and organic</p>
+                <p class="feature-text">Our cooks only use local, fresh, and organic products to prepare.</p>
+            </div>
+            <div class="feature">
+                <ion-icon class="feature-icon" name="leaf-outline"></ion-icon>
+
+                <p class="feature-title">No waste</p>
+                <p class="feature-text">ll our partners only use reusable containers to package all your meals.</p>
+            </div>
+            <div class="feature">
+                <ion-icon class="feature-icon" ion-icon name="pause-outline"></ion-icon></ion-icon>
+
+                <p class="feature-title">Pause anytime</p>
+                <p class="feature-text">Going on vacation? Just pause your subscription, and we refund unused days.</p>
+            </div>
+        </div>
+    </section>
+    <section class="section-cta">
+        <div class="container">
+            <div class="cta">
+                <div class="cta-text-box">
+                    <h2 class="heading-secondary">Get your first meal for free!</h2>
+                    <p class="cta-text">Healthy, tasty and hassle-free meals are waiting for you. Start eating well
+                        today. You can cancel or pause anytime. And
+                        the first meal is on us!</p>
+                    <form class="cta-form" action="#">
+
+                        <div> <label for="nome-cognome" class="">Nome e Cognome</label>
+                            <input id="nome-cognome" type="text" placeholder="Il tuo nome" required />
+                        </div>
+
+                        <div>
+                            <label for="email" class="">email adress</label>
+                            <input id="email" type="email" placeholder="your@email" required />
+                        </div>
+
+                        <div>
+                            <label for="select-dove">Dove hai conosciuto Omnifood?</label>
+                            <select name="" id="select-dove" required>
+                                <option value="">Scegli un' opzione:</option>
+                                <option value="friends">Amici o familiari</option>
+                                <option value="Facebook">Facebook</option>
+                                <option value="podcast">Podcast</option>
+                                <option value="pubblicità">Pubblicità</option>
+                                <option value="others">Others</option>
+                            </select>
+                        </div>
+
+                        <button class="btn btn--form">Sign up now</button>
+                    </form>
+                </div>
+                <div class="cta-img-box"></div>
+            </div>
+        </div>
+        </div>
     </section>
 </main>
+<footer class="footer">
+    <div class="container grid grid--footer">
+        <div class="logo-col">
+            <a href="#" class="footer-logo">
+                <img src="img/omnifood-logo.png" alt="Omnifood logo" class="logo"></a>
+            <ul class="social-links">
+                <li><a class="footer-link" href="#"><ion-icon class="social-icon" name="logo-instagram"></ion-icon></a>
+                </li>
+                <li><a class="footer-link" href="#"><ion-icon class="social-icon" name="logo-facebook"></ion-icon></a>
+                </li>
+                <li><a class="footer-link" href="#"><ion-icon class="social-icon" name="logo-twitter"></ion-icon></a>
+                </li>
+            </ul>
+            <p class="copyright">Copywright &copy; 2027 by Omnifood, Inc. All rights reserved.</p>
+        </div>
+        <div class="address-col">
+            <p class="footer-heading">Contact us</p>
+            <address class="contacts">
+                <p> 623 Harrison St., 2nd Floor, San Francisco, CA 94107</p>
+                <p><a class="footer-link" href="tel: 415-201-6370">415-201-6370</a>
+                <p> <a class="footer-link" href="mailto:claracav@gmail.com">claracav@gmail.com</a></p>
+
+            </address>
+
+        </div>
+        <nav class="nav-col">
+            <p class="footer-heading">Account</p>
+            <ul class="footer-nav">
+                <li><a class="footer-link" href="#">Create account</a></li>
+                <li><a class="footer-link" href="#">Sign in</a></li>
+                <li><a class="footer-link" href="#">IOS app</a></li>
+                <li><a class="footer-link" href="#">Android app</a></li>
+            </ul>
+        </nav>
+        <nav class="nav-col">
+            <p class="footer-heading">Company</p>
+            <ul class="footer-nav">
+                <li><a class="footer-link" href="#">About Omnifood</a></li>
+                <li><a class="footer-link" href="#">For Business</a></li>
+                <li><a class="footer-link" href="#">Cooking partners</a></li>
+                <li><a class="footer-link" href="#">Careers</a></li>
+            </ul>
+        </nav>
+        <nav class="nav-col">
+            <p class="footer-heading">Resources</p>
+            <ul class="footer-nav">
+                <li><a class="footer-link" href="#">Recipe directory</a></li>
+                <li><a class="footer-link" href="#">Help center</a></li>
+                <li><a class="footer-link" href="#">Privacy & terms</a></li>
+            </ul>
+        </nav>
+
+
+
+    </div>
+</footer>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
-
-
